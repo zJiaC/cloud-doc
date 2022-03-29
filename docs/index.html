@@ -17,12 +17,42 @@
       loadSidebar: true,
       subMaxLevel: 3,
       sidebarDisplayLevel: 2,
-      coverpage: true
+      coverpage: true,
+      search: 'auto',
+      copyCode: {
+        buttonText : '点击复制',
+        errorText  : '错误',
+        successText: '复制成功'
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- plugins -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'e0b78f0b9a88d102ab4b',
+      clientSecret: '116a80f53b7c9db61393dd81cfbff6bc6567b6d5',
+      repo: 'cloud-doc',
+      owner: 'zJiaC',
+      admin: ['zJiaC'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+    // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
+    window.onhashchange = function (event) {
+      if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
+        location.reload()
+      }
+    }
+  </script>
 </body>
 </html>
