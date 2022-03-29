@@ -1,1 +1,3 @@
-## [zJiaC](https://zjiac.github.io/)换成docsify
+> 一个神奇的个人文档网站。
+
+- 最难的是坚持，最怕的却是习惯。
