@@ -8,6 +8,6 @@
     - [Web Service](old-blog/article-1.md)
     - [统一注解继承相同接口类](old-blog/article-5.md)
     - [Docker试验](old-blog/20190416.md)
-  - 知识储备
+  - 日常知识储备
     - [wsl2防淡忘](knowledge-reserve/wsl2.md)
     - [Windows常用记录](knowledge-reserve/windows.md)
