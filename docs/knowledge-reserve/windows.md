@@ -30,7 +30,13 @@ D:\folder-to-delete 目标删除文件夹
 - [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader) 是免费支持PDF、ebook等格式阅读器
 - [Huorong-Rules](https://github.com/tutugreen/Huorong-Rules) 火绒高级防护规则
 
-### 娱乐
+### 学习娱乐
 - [口袋监控](https://simple-1.github.io/pocket48/)
 - [Desktop48](https://github.com/Jarvay/desktop48) 口袋48桌面版
 - [UnblockNeteaseMusic](https://github.com/UnblockNeteaseMusic/server) 懂得都懂
+- [音乐下载](https://www.musicenc.com/)
+- [赛事直播](https://en.vipleague.tv/)
+- [周读](https://ebook2.lorefree.com/)
+- [数字图书馆](https://zh.sg1lib.org/)
+- [书栈网](https://www.bookstack.cn/)
+- [开源工厂](https://openingsource.org/zh-tw/)

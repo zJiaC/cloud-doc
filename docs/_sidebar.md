@@ -1,5 +1,5 @@
 - 目录
-  - 旧博客存档
+  - 旧博客部分存档
     - [跨域问题](old-blog/article-3.md)
     - [Spring注入自定义Job Factory](old-blog/article-4.md)
     - [部分常用](old-blog/article-7.md)
@@ -11,3 +11,6 @@
   - 日常知识储备
     - [wsl2防淡忘](knowledge-reserve/wsl2.md)
     - [Windows常用记录](knowledge-reserve/windows.md)
+    - [Linux备忘录](knowledge-reserve/linux.md)
+    - [Docker总结](knowledge-reserve/docker.md)
+    - [编程相关](knowledge-reserve/coding.md)
