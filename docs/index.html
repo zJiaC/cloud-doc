@@ -10,18 +10,15 @@
   <link rel="icon" href="logo.jpg" type="image/x-icon"/>
 </head>
 <body>
-  <nav>
-    <a href="#/README">主页</a>
-    <a href="#/interview/interview">面试</a>
-    <a href="https://zjiac.github.io/">zJiaC</a>
-  </nav>
   <div id="app">加载中</div>
   <script>
     window.$docsify = {
       name: '云文档记录',
+      nameLink:'#/README.md',
       repo: '',
       homepage: 'home.md',
       loadSidebar: true,
+      loadNavbar: true,
       subMaxLevel: 3,//最大支持渲染的标题层级
       auto2top: true, //切换页面后是否自动跳转到页面顶部
       sidebarDisplayLevel: 2,//侧边栏显示层级

@@ -12,5 +12,6 @@
     - [wsl2防淡忘](knowledge-reserve/wsl2.md)
     - [Windows常用记录](knowledge-reserve/windows.md)
     - [Linux备忘录](knowledge-reserve/linux.md)
-    - [Docker总结](knowledge-reserve/docker.md)
+    - [项目部署相关](knowledge-reserve/deploy.md)
     - [编程相关](knowledge-reserve/coding.md)
+    - [Docsify备忘录](knowledge-reserve/docsify.md)

@@ -2,11 +2,11 @@
 
 ![logo](logo.jpg)
 
-# zJiaC <small>0.0.18</small>
+# zJiaC <small>0.0.19</small>
 
 > 一个神奇的个人文档网站。
 
 - 最难的是坚持，最怕的却是习惯。
 
 [GitHub](https://github.com/zJiaC/cloud-doc/)
-[Get Started](home.md)
+[开始阅读](home.md)
