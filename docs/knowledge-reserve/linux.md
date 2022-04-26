@@ -5,7 +5,7 @@
 ```
 find -newermt 2021-01-01 | cpio -dp /tmp/back
 ```
-PS:Windows使用xcopy可达到同样效果
+!> Windows使用xcopy可达到同样效果
 
 ## 收藏网址
 - [linux命令搜索引擎](https://wangchujiang.com/linux-command/)

@@ -9,7 +9,7 @@
 - /etc/localtime:/etc/localtime
 - /etc/timezone:/etc/timezone
 ```
-PS:第一种仍然存在时区问题，第二种最终解决该问题。
+!> 第一种仍然存在时区问题，第二种最终解决该问题。
 
 ### [使用 Nginx 将 HTTP 重定向到 HTTPS](https://mincong.io/cn/redirect-traffic-to-https-nginx/)
 - 配置重定向:
@@ -20,7 +20,8 @@ PS:第一种仍然存在时区问题，第二种最终解决该问题。
     return       301 https://$host$request_uri;
   }
 ```
-PS:这里的服务器名字（server name）是个通配符_：也就是无论 URL 中包含什么域名，当请求到达 Nginx 服务器以后，都会被重定向到 HTTPS。比如说，无论是 http://sever.info 还是 http://www.sever.info 都会被重定向到它们相应的 HTTPS 链接。
+
+!> 这里的服务器名字（server name）是个通配符_：也就是无论 URL 中包含什么域名，当请求到达 Nginx 服务器以后，都会被重定向到 HTTPS。比如说，无论是 http://sever.info 还是 http://www.sever.info 都会被重定向到它们相应的 HTTPS 链接。
 
 ### 已非jar包形式部署Spring boot项目挂载项目
 - 前情提要：

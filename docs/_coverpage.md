@@ -2,7 +2,7 @@
 
 ![logo](logo.jpg)
 
-# zJiaC <small>0.0.19</small>
+# zJiaC <small>0.0.20</small>
 
 > 一个神奇的个人文档网站。
 
