@@ -19,7 +19,7 @@ D:\folder-to-delete 目标删除文件夹
 - [NRM](https://www.npmjs.com/package/nrm) 是一个npm源管理器
 
 ### Go相关
-- [g](https://github.com/voidint/g) 是一个Linux、macOS、Windows下的命令行工具，可以提供一个便捷的多版本go环境的管理和切换
+- [g](https://github.com/voidint/g) 是一个 Linux、macOS、Windows 下的命令行工具，可以提供一个便捷的多版本 go 环境的管理和切换
 
 ### 其它
 - [Snipaste](https://zh.snipaste.com/) 是一个简单但强大的截图工具
@@ -27,7 +27,7 @@ D:\folder-to-delete 目标删除文件夹
 - [Everything](https://www.voidtools.com/zh-cn/) 基于名称快速定位文件和文件夹
 - [Bandizip](https://cn.bandisoft.com/bandizip/) 是一个强大的多功能压缩文件管理工具，可提供很快的解压缩速度和其他各种实用功能
 - [Typora](https://typora.io/) Markdown编辑工具，最新版开始收费
-- [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader) 是免费支持PDF、ebook等格式阅读器
+- [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader) 是免费支持 PDF、ebook 等格式阅读器
 - [Huorong-Rules](https://github.com/tutugreen/Huorong-Rules) 火绒高级防护规则
 
 ### 学习娱乐
