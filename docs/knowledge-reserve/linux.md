@@ -12,5 +12,5 @@ find -newermt 2021-01-01 | cpio -dp /tmp/back
 
 ## 收藏网址
 
-- [linux命令搜索引擎](https://wangchujiang.com/linux-command/)
+- [linux 命令搜索引擎](https://wangchujiang.com/linux-command/)
 - [Vim 命令速查表](https://www.dute.org/vim-cheat-sheet)

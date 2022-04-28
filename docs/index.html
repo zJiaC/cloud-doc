@@ -1,87 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link rel="icon" href="logo.jpg" type="image/x-icon"/>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" type='text/css'
+          media='all'/>
 </head>
 <body>
-  <div id="app">加载中</div>
-  <script>
+<div id="app">加载中</div>
+<script>
     window.$docsify = {
-      name: '云文档记录',
-      nameLink:'#/README.md',
-      repo: '',
-      homepage: 'home.md',
-      loadSidebar: true,
-      loadNavbar: true,
-      subMaxLevel: 3,//最大支持渲染的标题层级
-      auto2top: true, //切换页面后是否自动跳转到页面顶部
-      sidebarDisplayLevel: 2,//侧边栏显示层级
-      coverpage: true,//封面
-      search: {
-        //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-        paths: "auto",
-        placeholder: "搜索",
-        noData: "找不到结果",
-        // 搜索标题的最大程级, 1 - 6
-        depth: 3,
-      },
-      copyCode: {
-        buttonText : '点击复制',
-        errorText  : '错误',
-        successText: '复制成功'
-      },
-      count:{
-        countable:true,
-        fontsize:'0.9em',
-        color:'rgb(90,90,90)',
-        language:'chinese'
-      }
+        name: '云文档记录',
+        nameLink: '#/README.md',
+        repo: '',
+        homepage: 'home.md',
+        loadSidebar: true,
+        loadNavbar: true,
+        subMaxLevel: 3,//最大支持渲染的标题层级
+        auto2top: true, //切换页面后是否自动跳转到页面顶部
+        sidebarDisplayLevel: 2,//侧边栏显示层级
+        coverpage: true,//封面
+        onlyCover: true,// 封面和内容单独显示
+        mergeNavbar: true,// 小屏设备下合并导航栏到侧边栏
+        search: {
+            //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            paths: "auto",
+            placeholder: "搜索",
+            noData: "找不到结果",
+            // 搜索标题的最大程级, 1 - 6
+            depth: 3,
+        },
+        copyCode: {
+            buttonText: '点击复制',
+            errorText: '错误',
+            successText: '复制成功'
+        },
+        count: {
+            countable: true,
+            fontsize: '0.9em',
+            color: 'rgb(90,90,90)',
+            language: 'chinese'
+        }
     }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!--Java代码高亮-->
-  <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
-  <!-- plugins -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-  <!--全文搜索-->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <!-- 复制到剪贴板 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  <!-- 图片缩放 -->
-  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
-  <!-- 字数统计 -->
-  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-  <!-- 表情 -->
-  <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+</script>
+<!-- Docsify v4 -->
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<!--Java代码高亮-->
+<script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+<!-- plugins -->
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+<!--全文搜索-->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<!-- 复制到剪贴板 -->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+<!-- 图片缩放 -->
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+<!-- 字数统计 -->
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+<!-- 表情 -->
+<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
 
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-  <script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script>
     const gitalk = new Gitalk({
-      id:'zJiaC Document Comment',
-      clientID: 'e0b78f0b9a88d102ab4b',
-      clientSecret: '116a80f53b7c9db61393dd81cfbff6bc6567b6d5',
-      repo: 'cloud-doc',
-      owner: 'zJiaC',
-      admin: ['zJiaC'],
-      // facebook-like distraction free mode
-      distractionFreeMode: false
+        id: 'zJiaC Document Comment',
+        clientID: 'e0b78f0b9a88d102ab4b',
+        clientSecret: '116a80f53b7c9db61393dd81cfbff6bc6567b6d5',
+        repo: 'cloud-doc',
+        owner: 'zJiaC',
+        admin: ['zJiaC'],
+        // facebook-like distraction free mode
+        distractionFreeMode: false
     })
     // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
     window.onhashchange = function (event) {
-      if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
-        location.reload()
-      }
+        if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
+            location.reload()
+        }
     }
-  </script>
+</script>
+<!-- 回到顶部功能 -->
+<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.goup({
+            trigger: 100,
+            bottomOffset: 52,
+            locationOffset: 25,
+            //title: 'TOP',
+            titleAsText: true
+        });
+    });
+</script>
+<!-- 复制提醒 -->
+<script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script>
+    document.body.oncopy = function () {
+        swal("复制成功 ",
+            "若要转载或引用请务必保留原文链接，并申明来源。", "success");
+    };
+</script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>

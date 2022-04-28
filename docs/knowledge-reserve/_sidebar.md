@@ -1,0 +1,8 @@
+- 目录
+    - [wsl2 防淡忘](knowledge-reserve/wsl2.md)
+    - [Windows 常用记录](knowledge-reserve/windows.md)
+    - [Linux 备忘录](knowledge-reserve/linux.md)
+    - [运维相关](knowledge-reserve/deploy.md)
+    - [编程相关](knowledge-reserve/coding.md)
+    - [Docsify 备忘录](knowledge-reserve/docsify.md)
+    - [Emoji 表情](knowledge-reserve/emoji.md)
