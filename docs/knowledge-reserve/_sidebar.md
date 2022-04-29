@@ -5,4 +5,5 @@
     - [运维相关](knowledge-reserve/deploy.md)
     - [编程相关](knowledge-reserve/coding.md)
     - [Docsify 备忘录](knowledge-reserve/docsify.md)
+    - [Nginx](knowledge-reserve/nginx.md)
     - [Emoji 表情](knowledge-reserve/emoji.md)

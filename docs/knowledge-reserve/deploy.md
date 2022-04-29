@@ -11,18 +11,6 @@
 ```
 !> 第一种仍然存在时区问题，第二种最终解决该问题。
 
-### [使用 Nginx 将 HTTP 重定向到 HTTPS](https://mincong.io/cn/redirect-traffic-to-https-nginx/)
-- 配置重定向:
-```
-  server {
-    listen       80;
-    server_name  _;
-    return       301 https://$host$request_uri;
-  }
-```
-
-!> 这里的服务器名字(server name)是个通配符_：也就是无论 URL 中包含什么域名，当请求到达 Nginx 服务器以后，都会被重定向到 HTTPS。比如说，无论是 http://sever.info 还是 http://www.sever.info 都会被重定向到它们相应的 HTTPS 链接。
-
 ### 已非 jar 包形式部署 Spring boot 项目挂载项目
 - 前情提要：
     - 非 jar 形式通过脚本启动项目

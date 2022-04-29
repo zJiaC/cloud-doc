@@ -1,18 +1,4 @@
 - 目录
-  - 旧博客部分存档
-    - [跨域问题](old-blog/article-3.md)
-    - [Spring 注入自定义 Job Factory](old-blog/article-4.md)
-    - [部分常用](old-blog/article-7.md)
-    - [Druid 错误](old-blog/article-8.md)
-    - [Spring 注解执行顺序](old-blog/article-9.md)
-    - [Web Service](old-blog/article-1.md)
-    - [统一注解继承相同接口类](old-blog/article-5.md)
-    - [Docker 试验](old-blog/20190416.md)
-  - 日常知识储备
-    - [wsl2 防淡忘](knowledge-reserve/wsl2.md)
-    - [Windows 常用记录](knowledge-reserve/windows.md)
-    - [Linux 备忘录](knowledge-reserve/linux.md)
-    - [运维相关](knowledge-reserve/deploy.md)
-    - [编程相关](knowledge-reserve/coding.md)
-    - [Docsify 备忘录](knowledge-reserve/docsify.md)
-    - [Emoji 表情](knowledge-reserve/emoji.md)
+  * [:memo:面试](/interview/_sidebar.md)
+  * [:infinity:日常积累](/knowledge-reserve/_sidebar.md)
+  * [:ng:旧博客存档](/old-blog/_sidebar.md)
