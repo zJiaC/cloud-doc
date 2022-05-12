@@ -9,25 +9,27 @@
   ApplicationContextInitializedEvent：上下文已实例化
   ApplicationPreparedEvent：上下文已准备好
   ApplicationStartedEvent：应用成功启动
-  ApplicationStartedEvent：应用成功启动
   ApplicationReadyEvent：应用已准备好
   ApplicationFailedEvent：应用启动失败
   ```
 - 获取上下文方式：
   - 实现ApplicationContextAware
+  
+!> [SpringBoot内置生命周期事件详解](https://github.com/yuanmabiji/Java-SourceCode-Blogs/blob/master/SpringBoot/10%20SpringBoot%E5%86%85%E7%BD%AE%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%BA%8B%E4%BB%B6%E8%AF%A6%E8%A7%A3%20%20SpringBoot%E6%BA%90%E7%A0%81(%E5%8D%81).md)
+!> [Spring：35道精选面试题](https://mp.weixin.qq.com/s/EQge6DmgIqYITM3mAxkatg)
 
 ## Redis
 
 - 分布式锁
   - 这个主要利用 redis 的 setnx 命令进行，setnx："set if not exists" 就是如果不存在则成功设置缓存同时返回 1，否则返回 0
 - 缓存：
-  - 缓存击穿
+  - 缓存穿透
     - 缓存穿透是指缓存和数据库中都没有的数据
     - 解决：
       - 接口层增加校验
       - 从缓存取不到的数据，在数据库中也没有取到，这时也可以将key-value对写为key-null
       - 布隆过滤器
-  - 缓存穿透
+  - 缓存击穿
     - 缓存击穿是指缓存中没有但数据库中有的数据(一般是缓存时间到期)
     - 解决：
       - 设置热点数据永远不过期
@@ -42,7 +44,7 @@
 - 用途
 
 ## MQ
-
+``
 - 集群高可用
 
 ## 事务
@@ -87,7 +89,7 @@
 - Integer小知识:
   - [涉及IntegerCache，1000==1000为false而100==100为true](https://mp.weixin.qq.com/s/mBs5k2LnoGMerpE2vAQzyg):
 
-    ```java
+    ```
     Integer a = 1000, b = 1000;  
     System.out.println(a == b);
     Integer c = 100, d = 100;  
