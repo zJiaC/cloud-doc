@@ -14,8 +14,9 @@
   ```
 - 获取上下文方式：
   - 实现ApplicationContextAware
-  
+
 !> [SpringBoot内置生命周期事件详解](https://github.com/yuanmabiji/Java-SourceCode-Blogs/blob/master/SpringBoot/10%20SpringBoot%E5%86%85%E7%BD%AE%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%BA%8B%E4%BB%B6%E8%AF%A6%E8%A7%A3%20%20SpringBoot%E6%BA%90%E7%A0%81(%E5%8D%81).md)
+
 !> [Spring：35道精选面试题](https://mp.weixin.qq.com/s/EQge6DmgIqYITM3mAxkatg)
 
 ## Redis
@@ -44,8 +45,9 @@
 - 用途
 
 ## MQ
-``
-- 集群高可用
+
+- 集群高可用部署
+  
 
 ## 事务
 
@@ -79,10 +81,38 @@
     串行化的 (serializable) :避免以上所有读问题.
     ```
   - 可能引起失效原因：
+    - @Transactional 应用在非 public 修饰的方法上
+    - @Transactional 注解属性 propagation(传播机制) 设置错误
+    - @Transactional 注解属性 rollbackFor 设置错误
+    - 同一个类中方法调用，导致@Transactional 失效
 
 ## 设计模式
+  - Spring中应用的设计模式
+    - 工厂模式
+      - Spring 容器本质是一个大工厂，使用工厂模式通过 BeanFactory、ApplicationContext 创建 bean 对象。
+    - 代理模式
+      - Spring AOP 功能功能就是通过代理模式来实现的，分为动态代理和静态代理。
+    - 单例模式
+      - Spring 中的 Bean 默认都是单例的，这样有利于容器对 Bean 的管理。
+    - 模板模式
+      - Spring 中 JdbcTemplate、RestTemplate 等以 Template 结尾的对数据库、网络等等进行操作的模板类，就使用到了模板模式。
+    - 观察者模式
+      - Spring 事件驱动模型就是观察者模式很经典的一个应用。
+    - 适配器模式
+      - Spring AOP 的增强或通知 (Advice) 使用到了适配器模式、Spring MVC 中也是用到了适配器模式适配 Controller。
+    - 策略模式
+      - Spring 中有一个 Resource 接口，它的不同实现类，会根据不同的策略去访问资源。
 
 ## 多线程
+  - 线程使用方式
+    - 实现 Runnable 接口
+      - 需要实现 run() 方法。
+      - 通过 Thread 调用 start() 方法来启动线程。
+    - 实现 Callable 接口
+      - 与 Runnable 相比，Callable 可以有返回值，返回值通过 FutureTask 进行封装。
+    - 继承 Thread 类
+      - 同样也是需要实现 run() 方法，因为 Thread 类也实现了 Runable 接口。
+      - 当调用 start() 方法启动一个线程时，虚拟机会将该线程放入就绪队列中等待被调度，当一个线程被调度时会执行该线程的 run() 方法。
 
 ## 其它
 
