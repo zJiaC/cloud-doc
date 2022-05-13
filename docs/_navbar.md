@@ -8,6 +8,6 @@
 </span>
 
 * [:house:主页](/README.md)
-* [:memo:面试](/interview/_sidebar.md)
 * [:infinity:日常积累](/knowledge-reserve/_sidebar.md)
+* [:memo:面试](/interview/_sidebar.md)
 * [:back:zJiaC](https://zjiac.github.io/)

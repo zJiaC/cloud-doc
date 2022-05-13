@@ -37,7 +37,7 @@ D:\folder-to-delete 目标删除文件夹
 - [:radio:音乐下载](https://www.musicenc.com/)
 - [:tv:赛事直播](https://en.vipleague.tv/)
 - [:book:周读](https://ebook2.lorefree.com/)
-- [:book:数字图书馆](https://zh.sg1lib.org/)
+- [:book:Z-Library](https://zh.sg1lib.org/)
 - [:book:书栈网](https://www.bookstack.cn/)
 - [:factory:开源工厂](https://openingsource.org/zh-tw/)
 - [:smile:emoji](https://emojipedia.org/)

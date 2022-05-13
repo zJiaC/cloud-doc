@@ -8,3 +8,6 @@
 - [数据可视化](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
   - 便于理解B+树等数据结构
 - [Reactor 指南中文版](https://projectreactor.mydoc.io/)  
+- [Java 全栈知识体系](https://www.pdai.tech/)
+- [Java 程序员进阶之路](https://docsify.tobebetterjavaer.com/)
+- [JavaGuide](https://snailclimb.gitee.io/javaguide/#/)

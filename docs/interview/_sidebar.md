@@ -1,3 +1,2 @@
 - 目录
-    - 日常经验
-        - [面试归纳](interview/interview.md)
+  - [面试归纳](interview/interview.md)
