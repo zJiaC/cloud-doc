@@ -45,7 +45,7 @@
             fontsize: '0.9em',
             color: 'rgb(90,90,90)',
             language: 'chinese'
-        }/*,
+        },
         // 底部导航
         pagination: {
             previousText: "上一页",
@@ -57,7 +57,7 @@
         toc: {
             tocMaxLevel: 2,
             target: "h2, h3, h4, h5, h6",
-        },*/
+        },
     }
 </script>
 <!-- Docsify v4 -->
@@ -100,8 +100,8 @@
     }
 </script>
 <!-- 回到顶部功能 -->
-<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+<script src="//cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+<script src="//cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $.goup({
@@ -123,9 +123,65 @@
 </script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- 底部 上一页下一页 -->
-<!--<script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>-->
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
 <!-- 页面右侧 TOC -->
-<!--<script src="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js"></script>-->
+<script src="//cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js"></script>
+<!--修复 cdn.jsdelivr.net 无法访问的问题 https://github.com/PipecraftNet/jsdelivr-auto-fallback-->
+<script src="https://gcore.jsdelivr.net/gh/PipecraftNet/jsdelivr-auto-fallback@main/index.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        const SOURCE = '//cdn.jsdelivr.net';
+        const DEST = '//gcore.jsdelivr.net';
+        const $ = document.querySelectorAll.bind(document);
+        const checkAvailable = (callback) => {
+            const img = new Image();
+            const timeoutId = setTimeout(function () {
+                callback(false);
+            }, 3000);
+            img.addEventListener('load', function () {
+                clearTimeout(timeoutId);
+                callback(true);
+            });
+
+            img.src = SOURCE + '/favicon.ico';
+        };
+
+        const replaceElementSrc = () => {
+            for (const element of $('img')) {
+                if (element.src && element.src.includes(SOURCE)) {
+                    element.src = element.src.replace(SOURCE, DEST);
+                }
+            }
+
+            for (const element of $('link[rel="stylesheet"]')) {
+                if (element.href && element.href.includes(SOURCE)) {
+                    element.href = element.href.replace(SOURCE, DEST);
+                }
+            }
+
+            for (const element of $('script')) {
+                if (element.src && element.src.includes(SOURCE)) {
+                    const newNode = document.createElement('script');
+                    newNode.src = element.src.replace(SOURCE, DEST);
+                    element.after(newNode);
+                    element.remove();
+                }
+            }
+        };
+
+        checkAvailable(function (isAvailable) {
+            if (isAvailable) {
+                return;
+            }
+
+            console.warn(SOURCE + ' is not available.');
+
+            replaceElementSrc();
+            // Replace dynamically added elements
+            setInterval(replaceElementSrc, 2000);
+        });
+    })();
+</script>
 
 </body>
 </html>
